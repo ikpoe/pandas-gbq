@@ -162,7 +162,7 @@ class TableCreationError(ValueError):
 
 
 class GbqConnector(object):
-    scope = 'https://www.googleapis.com/auth/bigquery'
+    scope = 'https://www.googleapis.com/auth/bigquery https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/drive'
 
     def __init__(self, project_id, reauth=False,
                  private_key=None, auth_local_webserver=False,
